@@ -81,3 +81,18 @@ Options:
 ## Node.js requirements
 
 svg2png uses the latest in ES2015 features, and as such requires a recent version of Node.js. Only the 6.x series onward is supported.
+
+## 本地使用
+svg放在[inputs](test%2Finputs)目录下
+修改[tests.json](test%2Fsuccess-tests%2Ftests.json)
+```json
+[
+    {
+        "name": "0",
+        "file": "apple-14.svg",
+        "options": { "width": 200, "height": 200}
+    }
+]
+```
+运行 [package.json](package.json) rebaseline
+png输出在[success-tests](test%2Fsuccess-tests)目录下
